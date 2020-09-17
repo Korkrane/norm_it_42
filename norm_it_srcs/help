@@ -1,0 +1,51 @@
+.TH NORM_IT "1" "September 2020"
+.SH NAME
+.BR norm_it " - norm your .c files at 42 School"
+.SH SYNOPSYS
+.RB bash " norm_it.sh"
+.RI [ "OPTIONS" ]...
+.SH DESCRIPTION
+norm_it is a shell script that help you to norm your .c files and check if they respect the 42's norm.
+.SH OPTIONS
+.TP
+.BR -h ", " --help
+Display help and exit
+.TP
+.B -test
+Run norminette command only
+.TP
+.B -all
+Run all the norm correction available
+.TP
+.B -h
+Check if 42 Header is present or not and add header if missing
+.TP
+.B -t
+Clean whitespaces at the end of each lines
+.TP
+.B -i
+Correct the indentation
+.TP
+.B -s
+Correct missing space after while/if/for/return if space missing
+.TP
+.B -e
+Replace multiple empty lines by a single one
+.TP
+.B -v
+Correct the aligment of variable declaration in each function
+.TP
+.B -g
+Correct the alignement of the global scope
+.SH EXAMPLE
+bash norm_it.sh -i -test
+
+It will correct the indentation and check the norm
+.SH AUTHOR
+Written by Baudoin Haas.
+.SH REPORTING BUGS
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+
+For any bugs reporting, contact bahaas@student.42.fr 
+.SH SEE ALSO 
+For any questions or if you want to contribute to this project, please contact bahaas@student.42.fr 
